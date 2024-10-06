@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 11</title>
+    <style> /*Asi se escriben los comentarios en css*/
+        table {
+            margin: auto; /*para centrar la tabla horizontalmente */
+            border-collapse: collapse; /*para unir los bordes de la tabla */
+            width: 95%; /*ancho de las celdas*/
+        }
+        th {
+            border: 1.5px solid black; /* Bordes de las celdas */
+            padding: 3px; /* Espacio interno de las celdas */
+            text-align: center; /* Alineación del texto en el centro de las celdas */
+        }
+        td {
+            border: 1.5px solid black; /* Bordes de las celdas */
+            padding: 3px; /* Espacio interno de las celdas */
+            text-align: left; /* Alineación del texto en el centro de las celdas */
+        }
+    </style>
+</head>
+<body>
+    <h1><i>ORGANIZACION DE LA SEMANA</i></h1>
+    <table>
+        <caption>Tardes ocupadas</caption>
+        <col style="background-color: rgb(213, 175, 208);"><!--color de la primera columna-->
+    <tr>
+        <th id="vacio"> </th>
+        <th id="l">Lunes</th>
+        <th id="m">Martes</th>
+        <th id="mx">Miercoles</th>
+        <th id="j">Jueves</th>
+        <th id="v">Viernes</th>
+    </tr>
+    <tr>
+        <td>Lengua</td>
+        <td headers="l">X</td>
+        <td headers="m">X</td>
+        <td headers="mx"></td>
+        <td headers="j"></td>
+        <td headers="v">X</td>
+    </tr>
+    <tr>
+        <td>Matematicas</td>
+        <td headers="l"></td>
+        <td headers="m"></td>
+        <td headers="mx">X</td>
+        <td headers="j"></td>
+        <td headers="v">X</td>
+    </tr>
+    <tr>
+        <td>Musica</td>
+        <td headers="l">X</td>
+        <td headers="m"></td>
+        <td headers="mx"></td>
+        <td headers="j">X</td>
+        <td headers="v"></td>
+    </tr>
+    <tr>
+        <td>Totales</td>
+        <td headers="l">2</td>
+        <td headers="m">1</td>
+        <td headers="mx">1</td>
+        <td headers="j">1</td>
+        <td headers="v">2</td>
+    </tr>
+
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <style> /*Asi se escriben los comentarios en css*/
+        table {
+            margin: auto; /*para centrar la tabla horizontalmente */
+            border-collapse: collapse; /*para unir los bordes de la tabla */
+            width: 50%; /*ancho de las celdas*/
+        }
+        th {
+            border: 1.5px solid black; /* Bordes de las celdas */
+            padding: 3px; /* Espacio interno de las celdas */
+            text-align: center; /* Alineación del texto en el centro de las celdas */
+        }
+        td {
+            border: 1.5px solid black; /* Bordes de las celdas */
+            padding: 5px; /* Espacio interno de las celdas */
+            text-align: left; /* Alineación del texto en el centro de las celdas */
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Analisis de gastos</i></h1>
+    <table>
+        <caption>Facturacion de los ultimos 3 meses</caption>
+        <col style="background-color: rgba(251, 210, 228, 0.671);"><!--color de la primera columna-->    
+        <col style="background-color: rgba(251, 210, 228, 0.671);"><!--color de la segunda columna-->   
+        <col style="background-color: rgba(134, 255, 152, 0.788);"><!--color de la tercera columna-->
+        <col style="background-color: rgba(134, 255, 152, 0.788);"><!--color de la cuarta columna-->
+        <col style="background-color: rgba(134, 255, 152, 0.788);"><!--color de la quinta columna-->
+        
+        <tr>
+            <th colspan="2" id="vacio"></th>
+            <th id="1">Primer Mes</th>
+            <th id="2">Segundo Mes</th>
+            <th id="3">Tercer Mes</th>
+        </tr>
+        <tr>
+            <td headers="vacio" rowspan="3">Recursos</td>
+            <td headers="vacio">CPU</td>
+            <td headers="1">100€</td>
+            <td headers="2">200€</td>
+            <td headers="3">400€</td>
+        </tr>
+        <tr>
+            <td headers="vacio">Discos Duros</td>
+            <td headers="1">100€</td>
+            <td headers="2">200€</td>
+            <td headers="3">400€</td>
+        </tr>
+        <tr>
+            <td headers="vacio">Monitores</td>
+            <td headers="1">100€</td>
+            <td headers="2">200€</td>
+            <td headers="3">400€</td>
+        </tr>
+    </table>
+</body>
+</html>
