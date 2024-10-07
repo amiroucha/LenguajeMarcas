@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php" method="post" autocomplete="off">
+        <!--autocomplete: hacer click encima de los campos y que te de una sugerencia de que poner-->
+        <!--Con el post se evita que los datos sean visibles-->
+        <!--Con el metodo get se ve en la url todo la informacion que se pide-->
+       <!--Cuando usar get: cuando quieres usar la pagina sig como filtro, por ejemplo
+       una tienda online para comprar y pones el rango de precio, el modelo de x, el año...-->
+        <h1>Mi formulario</h1>
+        <label for="nombre">Nombre: </label><br>
+        <!--con el for se asocia con el id para saber a que etiqueta va-->
+        <input type="text" name="nombre" id="nombre"><br><!--caja de texto-->
+        <label for="mensaje">Apellidos:</label><br>
+        <input type="text" name="mensaje" id="mensaje"><br>
+        <input type="color" name="Un color"><!--se manda un color-->
+        <label for="contra">Password:</label><br><!--no tiene seguridad, pero te tapa la contra  la hora de estar escribiendo-->
+        <input type="password" name="pasw" id="contra"><br>
+        <!--RADIO: se pone el mismo name a los que estan relacionados
+        radio es cuando tienes opciones y solo puedes elegir 1
+        El checked marca esa opcion por defecto-->
+        <!--Label es lo que se ve en la pantalla-->
+        <input type="submit" value="Probar"> <br>
+        <!--importante poner el boton, aunque no haga nada-->
+
+        <!--El checkbox tiene que ver cuando se pueden marcar varias opciones
+        En este caso el name se pone distinto a cada opcion-->
+
+        <input type="button" onclick="alert('Debes poner todos los datos')" value="ayuda">
+
+        <!--IMPORTANTE PONER EL NAMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-->
+        <!--MAX LENGHT el max -->
+
+    </form>
+</body>
+</html>
