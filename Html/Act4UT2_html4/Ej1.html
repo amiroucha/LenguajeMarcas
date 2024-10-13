@@ -111,25 +111,93 @@
             <label for="nombre">Nombre: </label><br>
             <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
             <label for="pais">País de residencia</label><br>
-            <input list="pais" name="pais">
-            <datalist id="pais">
-                <option value="España" selected>
-            <!--No se como hacer para que me salga por defecto españa-->
-                <option value="Marruecos">
-                <option value="Ecuador">
-                <option value="Colombia">
-                <option value="Egipto">
-                <option value="grecia">
-                <option value="Italia">
-                <option value="Irlanda">
-                <option value="Cuba">
-            </datalist>
-            
+            <select name="pais" id="pais">
+                <option value="España" selected>España</option>
+                <option value="Marruecos">Marruecos</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Egipto">Egipto</option>
+                <option value="grecia">Grecia</option>
+                <option value="Italia">Italia</option>
+                <option value="Irlanda">Irlanda</option>
+                <option value="Cuba">Cuba</option>
+            </select>
+        
             <br><br>
             <input type="reset" value="Borrar"><br>
             <div style="text-align: center">
                 <input type="submit" value="Enviar"><br>
             </div>
+        </form>
+    </fieldset>
+    <!--EJERCICIO 6-->
+    <br>
+    <fieldset>
+        <legend>Ejercicio 6</legend>
+        <form action="/registrardatos.php" method="get">
+            <label for="colores">Elige hasta cinco colores </label><br>
+            <select name="colores" id="colores" size="5" multiple>
+                <option value="Amarillo">Amarillo</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Negro">Negro</option>
+                <option value="Lila">Lila</option>
+                <option value="Marron">Marron</option>
+                <option value="Naranja">Naranja</option>
+                <option value="Gris">Gris</option>
+                <option value="Blanco">Blanco</option>
+            </select>
+            <br><br>
+            <label for="movil">Teléfonos a elegir</label><br>
+            <select name="movil" id="movil" multiple>
+                <option value="OPPO Find N3">OPPO Find N3</option>
+                <option value="Samsung Galaxy S23 Ultra 5G">Samsung Galaxy S23 Ultra 5G</option>
+                <option value="Xiaomi 13 Ultra">Xiaomi 13 Ultra</option>
+                <option value="Asus ROG Phone 7.">Asus ROG Phone 7.</option>
+                <option value="Huawei P60 Pro">Huawei P60 Pro</option>
+            </select>
+        
+            <br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+
+
+        </form>
+    </fieldset>
+
+    <!--EJERCICIO 7-->
+    <br>
+    <fieldset>
+        <legend>Ejercicio 7</legend>
+        <form action="/registrardatos.php" method="post">
+            <!--Para mostrar ls hora-->
+            <label for="hora">Elige hora de relleno:</label>
+        <input type="time" name="hora" id="hora" required>
+            <br><hr><br><!--Para dar dos opciones a elegir-->
+            <label for="genero">Género:</label>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="femenino"> Femenino
+            <br><hr><br><!--para elegir un archivo del ordenador-->
+            <label for="archivo">Selecciona un archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+            <br><hr><br><!--Para elegr mes y anio-->
+            <label for="mes">Selecciona un mes y un año:</label>
+            <input type="month" id="mes" name="mes" required>
+            <br><hr><br><!--los colores-->
+            <label for="color">Selecciona un color:</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+
+
+            <br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+
+
         </form>
     </fieldset>
 </body>
