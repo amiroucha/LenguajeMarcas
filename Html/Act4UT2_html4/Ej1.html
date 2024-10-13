@@ -11,20 +11,126 @@
     <fieldset>
         <legend>Ejercicio 1</legend>
         <form action="/registrardatos.php" method="post">
-        <label for="nombre">Nombre: </label><br>
-        <input type="text" name="nombre" id="nombre"><br>
-        <label for="Contraseña">Contraseña: </label><br>
-        <input type="password" name="Contraseña" id="Contraseña"><br>
-        <label for="edad">Edad: </label><br>
-        <input type="text" name="edad" id="edad"><br>
-        <label for="dni">DNI</label><br>
-        <input type="text" name="dni" id="dni"><br><br>
-        <input type="reset" value="Borrar"><br>
-        <div style="text-align: center">
-            <input type="submit" value="Enviar"><br>
-        </div>
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="Contraseña">Contraseña: </label><br>
+            <input type="password" name="Contraseña" id="Contraseña"><br>
+            <label for="edad">Edad: </label><br>
+            <input type="text" name="edad" id="edad"><br>
+            <label for="dni">DNI</label><br>
+            <input type="text" name="dni" id="dni"><br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
         </form>
     </fieldset>
-    
+    <br>
+    <!--EJERCICIO 2-->
+    <fieldset>
+        <legend>Ejercicio 2</legend>
+        <form action="/registrardatos.php" method="post">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" name="nombre" id="nombre" required><br><br>
+            <label for="checkbox">Elige los lenguajes donde sepas programar:</label><br>
+            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+            <label for="JavaScript">JavaScript</label><br>
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python">Python</label><br>
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="PHP">PHP</label><br>
+            <input type="checkbox" id="Ruby" name="Ruby" value="Ruby">
+            <label for="Ruby">Ruby</label><br>
+            <input type="checkbox" id="TypeScript" name="TypeScript" value="TypeScript">
+            <label for="TypeScript">TypeScript</label><br>
+            <input type="checkbox" id="Java" name="Java" value="Java">
+            <label for="Java">Java</label><br>
+            <input type="checkbox" id="Kotlin" name="Kotlin" value="Kotlin">
+            <label for="Kotlin">Kotlin</label><br>
+            <input type="checkbox" id="C#" name="C#" value="C#">
+            <label for="C#">C#</label><br>
+            <input type="checkbox" id="C" name="C" value="C">
+            <label for="C">C</label><br>
+            <input type="checkbox" id="Rust" name="Rust" value="Rust">
+            <label for="Rust">Rust</label><br><br>
+
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+        </form>
+    </fieldset>
+    <!--EJERCICIO 3-->
+    <br>
+    <fieldset>
+        <legend>Ejercicio 3</legend>
+        <form action="/registrardatos.php" method="post">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
+            <label for="estudios">Nivel de estudios</label>
+            <select name="estudios" id="estudios">
+                <option value="Sin estudios">Sin estudios</option>
+                <option value="Estudios primarios">Estudios primarios</option>
+                <option value="Estudios secundarios">Estudios secundarios</option>
+                <option value="Formacion profesional">Formacion profesional</option>
+                <option value="Estudios universitarios">Estudios universitarios</option>
+            </select>
+
+            <br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+        </form>
+    </fieldset>
+    <!--EJERCICIO 4-->
+    <br>
+    <fieldset>
+        <legend>Ejercicio 4</legend>
+        <form action="/registrardatos.php" method="post">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
+            <label for="email">Correo electrónico</label><br>
+            <input type="text" name="email" id="email"><br><br>
+            <label for="texto">Introduza un comentario</label><br>
+            <textarea name="comenta" id="comenta" placeholder="Escribe aqui..." rows="10" maxlength="200">
+            </textarea><!--No me pilla el placeholder-->
+            
+            <br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+        </form>
+    </fieldset>
+    <!--EJERCICIO 5-->
+    <br>
+    <fieldset>
+        <legend>Ejercicio 5</legend>
+        <form action="/registrardatos.php" method="post">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
+            <label for="pais">País de residencia</label><br>
+            <input list="pais" name="pais">
+            <datalist id="pais">
+                <option value="España" selected>
+            <!--No se como hacer para que me salga por defecto españa-->
+                <option value="Marruecos">
+                <option value="Ecuador">
+                <option value="Colombia">
+                <option value="Egipto">
+                <option value="grecia">
+                <option value="Italia">
+                <option value="Irlanda">
+                <option value="Cuba">
+            </datalist>
+            
+            <br><br>
+            <input type="reset" value="Borrar"><br>
+            <div style="text-align: center">
+                <input type="submit" value="Enviar"><br>
+            </div>
+        </form>
+    </fieldset>
 </body>
 </html>
