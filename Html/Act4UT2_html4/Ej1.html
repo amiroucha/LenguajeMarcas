@@ -10,15 +10,15 @@
     <!--EJERCICIO 1-->
     <fieldset>
         <legend>Ejercicio 1</legend>
-        <form action="/registrardatos.php" method="post">
+        <form action="/registrardatos.php" method="post" autocomplete="off">
             <label for="nombre">Nombre: </label><br>
             <input type="text" name="nombre" id="nombre"><br>
             <label for="Contraseña">Contraseña: </label><br>
-            <input type="password" name="Contraseña" id="Contraseña"><br>
+            <input type="password" name="Contrasenia" id="Contrasenia"><br>
             <label for="edad">Edad: </label><br>
-            <input type="text" name="edad" id="edad"><br>
+            <input type="number" name="edad" id="edad"><br>
             <label for="dni">DNI</label><br>
-            <input type="text" name="dni" id="dni"><br><br>
+            <input type="text" name="dni" id="dni" pattern="[0-9]{8}[azAZ]"><br><br>
             <input type="reset" value="Borrar"><br>
             <div style="text-align: center">
                 <input type="submit" value="Enviar"><br>
@@ -66,7 +66,7 @@
         <legend>Ejercicio 3</legend>
         <form action="/registrardatos.php" method="post">
             <label for="nombre">Nombre: </label><br>
-            <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="50" placeholder="Intruce tu nombre"><br><br>
             <label for="estudios">Nivel de estudios</label>
             <select name="estudios" id="estudios">
                 <option value="Sin estudios">Sin estudios</option>
@@ -93,9 +93,10 @@
             <label for="email">Correo electrónico</label><br>
             <input type="text" name="email" id="email"><br><br>
             <label for="texto">Introduza un comentario</label><br>
-            <textarea name="comenta" id="comenta" placeholder="Escribe aqui..." rows="10" maxlength="200">
-            </textarea><!--No me pilla el placeholder-->
-            
+            <textarea name="comenta" id="comenta" rows="10" maxlength="200" 
+            placeholder="Escribe aqui..."></textarea>
+            <!--tiene que estar jnto la etiqueta de cierre y de abrir, sino no me pilla el placeholder-->
+            <!--hay un atributo para e el usuario no pueda agrandar el cuadro y dejarlo fijo-->
             <br><br>
             <input type="reset" value="Borrar"><br>
             <div style="text-align: center">
@@ -111,7 +112,8 @@
             <label for="nombre">Nombre: </label><br>
             <input type="text" name="nombre" id="nombre" required maxlength="50"><br><br>
             <label for="pais">País de residencia</label><br>
-            <select name="pais" id="pais">
+            <input list="pais" id="paisses" name="paais" value="España"><br>
+            <datalist id="pais">
                 <option value="España" selected>España</option>
                 <option value="Marruecos">Marruecos</option>
                 <option value="Ecuador">Ecuador</option>
@@ -121,7 +123,7 @@
                 <option value="Italia">Italia</option>
                 <option value="Irlanda">Irlanda</option>
                 <option value="Cuba">Cuba</option>
-            </select>
+            </datalist>
         
             <br><br>
             <input type="reset" value="Borrar"><br>
@@ -133,6 +135,8 @@
     <!--EJERCICIO 6-->
     <br>
     <fieldset>
+         <!--tambien se puede hacer con checkbox-->
+         <!--no se puede limitar la cantidad a elegir solo con html-->
         <legend>Ejercicio 6</legend>
         <form action="/registrardatos.php" method="get">
             <label for="colores">Elige hasta cinco colores </label><br>
@@ -163,7 +167,6 @@
             <div style="text-align: center">
                 <input type="submit" value="Enviar"><br>
             </div>
-
 
         </form>
     </fieldset>
