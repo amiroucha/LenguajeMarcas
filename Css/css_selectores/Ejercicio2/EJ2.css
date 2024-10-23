@@ -1,0 +1,20 @@
+/*todos los enlaces*/
+a{
+    font-size: 16px;
+    color: red;
+    text-decoration: none;
+}
+/*cuando se pone el raton encima*/
+a:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+  }
+/*cuando esta activo el enlace*/
+a:active{
+    color: hsl(39, 100%, 53%);
+    text-decoration: none;
+}
+/*cuando se entra y sale del enalce*/
+
+
+/**/
