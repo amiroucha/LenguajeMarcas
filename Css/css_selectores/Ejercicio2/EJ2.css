@@ -15,6 +15,13 @@ a:active{
     text-decoration: none;
 }
 /*cuando se entra y sale del enalce*/
-
+a:visited{
+    color:green;
+    text-decoration: none;
+}
 
 /**/
+a:focus{
+    color:blue;
+    text-decoration: underline;
+}
