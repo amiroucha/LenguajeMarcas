@@ -3,4 +3,31 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #8e047b;
+    text-align: center;
+}
+.enlaces{
+    text-align: center;
+}
+
+a {
+    font-family: "Oswald";
+    display: inline-block;
+    text-decoration: none;
+    color: #39f1fb; /* Color inicial del texto */
+    font-size: 20px;
+    background-color: #4d0056; /* Color inicial del fondo */
+    padding: 10px 20px;
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: url('right_click.png'), pointer;
+    align-items: center;
+}
+a:hover{
+    background-color: #39f1fb;
+    color:#4d0056;
+}
