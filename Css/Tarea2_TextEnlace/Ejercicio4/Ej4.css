@@ -1,0 +1,9 @@
+.material-symbols-outlined{
+   background-color: rgb(255, 97, 97);
+   padding: 15px;
+   border-radius: 20px;
+   cursor: url('halloween.png'), auto;
+}
+.material-symbols-outlined:hover{
+    background-color: rgb(97, 255, 247);
+}
