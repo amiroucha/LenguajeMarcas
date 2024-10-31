@@ -9,6 +9,7 @@ h1{
 }
 p:nth-child(even){
     color: rgb(128, 251, 255);
+    text-align: right;
 }
 p:nth-child(even)::first-line{
     font-variant: small-caps;
