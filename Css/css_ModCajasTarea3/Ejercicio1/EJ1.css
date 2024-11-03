@@ -1,0 +1,14 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+    background-color: aqua;
+    border-radius: 25px;
+}
+img{
+    opacity: 0.4;
+}
+img:hover{
+    background-color: #39f1fb;
+    opacity: 1;
+}

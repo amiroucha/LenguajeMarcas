@@ -5,10 +5,10 @@
 }
 @font-face {
     font-family:"Prociono", serif;
-    src: url("fonts/Ejercicio2/Prociono/Prociono-Regular.ttf") format("truetype");
+    src: url("fonts/Prociono/Prociono-Regular.ttf") format("truetype");
 }
   
-h1{
+h1,h2{
     font-family:"Prociono", serif;
     word-spacing: 3px;
     letter-spacing: 5px;
