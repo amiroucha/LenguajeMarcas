@@ -1,8 +1,19 @@
-div{
-    margin: 100px;
-    max-width:max-content ;
+*{
+    box-sizing: border-box;
 }
 
-label, input, #pais{
+div{
+    width: 800px;
+    max-width: max-content;
+    padding: 20px;
+    background-color: rgb(204, 200, 200);
+}
+
+label, input, select{
     width: 100%;
+    padding: 5px;
+    margin: 5px 0px;
+}
+input[type="submit"]{
+    background-color: rgba(209, 29, 200, 0.897);
 }
