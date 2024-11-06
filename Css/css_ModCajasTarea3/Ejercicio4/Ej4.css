@@ -1,0 +1,8 @@
+div{
+    margin: 100px;
+    max-width:max-content ;
+}
+
+label, input, #pais{
+    width: 100%;
+}
