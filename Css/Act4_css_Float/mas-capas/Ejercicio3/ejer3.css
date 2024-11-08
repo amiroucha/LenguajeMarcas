@@ -1,0 +1,20 @@
+header{
+    background-color: black;
+    color: #fff;
+
+}
+ul{
+    list-style-type: none;
+
+}
+
+a[title="Artículo de Dragon Ball"], a[title="Artículo de Dragon Quest"], a[title="Contacto"]{
+    float: left;
+    padding: 5px;
+    text-decoration:none;
+}
+.right{
+    float: right;
+    text-decoration:none;
+
+}
