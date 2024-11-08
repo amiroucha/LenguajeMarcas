@@ -6,9 +6,8 @@ article[class="a11"]{
 
 article[class="a11"] > p, 
 article[class="a12"] > p,
-article[class="a13"] > p{
-    
-    border: 1px solid #000;
+article[class="a13"] > p{ 
+    border: 2px solid #000;
     width: 200px;
     padding: 5px;
     margin: 10px;
@@ -24,15 +23,41 @@ article[class="a12"]{
 article[class="a13"]{
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;/*Ejerciicco 1-3 -----*/
+    align-items: center;
 
 }
 
 /*Ejercicico 2-1----------------------------------------------------*/
+article[class="a21"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+article[class="a21"]>.p2{
+    background-color: rgb(195, 204, 212);
+
+}
+article[class="a21"] > div{
+    border: 2px solid #000;
+    width: 200px;
+    margin: 10px;
+}
 
 
+/*Ejercicico 2-2----------------------------------------------------*/
 
+article[class="a22"]{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+article[class="a22"] > div{
+    width: 200px;
+    margin: 10px;
+}
 
-
+.p2{
+    background-color: rgb(195, 204, 212);
+    border-bottom: 2px #000;/*me falta poner el borde debajo dee los nombres de la frutas*/
+}
 
