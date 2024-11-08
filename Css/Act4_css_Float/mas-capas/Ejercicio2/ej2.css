@@ -1,0 +1,11 @@
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    color: rgb(189, 33, 169);
+    text-align: center;
+}
+a{
+    background-color: rgb(234, 234, 234);
+    color: rgb(189, 33, 169);
+}
