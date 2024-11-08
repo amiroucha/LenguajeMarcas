@@ -1,20 +1,22 @@
 header{
-    background-color: black;
-    color: #fff;
-
+    position: sticky;
+    top: 0px;
 }
 ul{
     list-style-type: none;
+    background-color: #000000;
+    padding: 12px 0px 50px 0px;
+}
 
+li>a{
+    color: #fff;    
+    text-decoration:none;
+    margin: 10px;
 }
 
 a[title="Artículo de Dragon Ball"], a[title="Artículo de Dragon Quest"], a[title="Contacto"]{
     float: left;
-    padding: 5px;
-    text-decoration:none;
 }
-.right{
+.right>a{
     float: right;
-    text-decoration:none;
-
 }
