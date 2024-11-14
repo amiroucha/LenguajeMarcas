@@ -154,12 +154,47 @@ article.a31 > div.ficha{
     margin: 10px;
     width: 200px;
 }
-article.a25 p.p1{
-
+article.a31 p.p1{
     text-align: center;
     padding: 5px;
 }
 
 /*Ejercicico 3-2----------------------------------------------------*/
-
+article.a32{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.a32 > div.ficha{
+    border: 1px solid #000;
+    display: flex;
+    margin: 10px;
+    width: 300px;
+}
+article.a32 p.p1{
+    text-align: center;
+    padding: 5px;
+    border-right: black 2px solid;
+}
+article.a32 p.p2{
+    text-align: center;
+    padding: 5px;
+    border-bottom: black 2px solid;
+}
+/*Ejercicico 3-3----------------------------------------------------*/
+article.a33 > div.ficha{
+    border: 1px solid #000;
+    display: block;
+    margin: 10px;
+    width: 300px;         
+}
+article.a33  div.parte{
+    background-color: rgb(212, 211, 211);
+    display: flex;
+    align-items:  center; 
+} 
+div.parte > p.p1{
+    border-right: black 2px solid ;
+    border-bottom: black 2px solid ;
+    border-bottom-right-radius: 10px;
+}
 
