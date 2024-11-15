@@ -15,14 +15,18 @@
                 background: #f92672;
                 position: relative;
             }
-            .fade-in:hover {
+            .fade-in {
+                opacity: 0;
                 position: absolute;
                 right: 0;
                 height: 200px;
                 width: 50px;
                 background: #428bca;
                 /*Transición*/
-                transition: opacity , 0.8s, ease-in-out;
+                transition: opacity , 0.9s, ease-in-out;/*no se porq me lo hace de golpe*/
+            }
+            #ejercicio1:hover .fade-in{
+                opacity: 1;
             }
            
 
@@ -32,10 +36,8 @@
                 padding: 50px;
                 border: 1px solid black;
                 /*Transición*/
-                transition-property: border-radius;
-                transition-delay: 0.8s;
+                transition-property: border-radius, box-shadow;  
                 transition-duration: 2s;
-                transition-timing-function: ease-in-out;
             }
             
             div#ejercicio2 img{
@@ -52,8 +54,11 @@
                 height: 200px;
                 opacity: 0.3;
             }
-            div#ejercicio2 :hover{
-                border-radius: 13px;
+            div#ejercicio2:hover{
+                border-radius: 20px;
+                box-shadow:  6px 10.9px 48.6px rgba(0, 0, 0, 0.094), 
+                            11.2px 20.5px 77.5px rgba(0, 0, 0, 0.152), 
+                            29px 53px 167px rgba(0, 0, 0, 0.35);
             }
 
 
