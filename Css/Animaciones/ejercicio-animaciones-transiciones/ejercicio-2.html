@@ -19,20 +19,26 @@
             background-image: url('clockFace.png');
             left: 50%;
             margin: 5em 0 0 -189px;
-            
-
         }
-        
+        #clock:hover{
+            transform: rotate(360deg);
+        }
+        /*A cada uno se le da un timepo ditinto */
         #hour img{
             /*Transición*/
-            transition: 
-            transform: rotate(180deg);
+            transform: rotate(0deg);
+            transition-property: transform 10s 9s;
         }
         #minute img{
             /*Transición*/
+            transform: rotate(0deg);
+            transition-property: transform 6s 6s;
         }
         #second img{
             /*Transición*/
+            transform: rotate(0deg);
+            transition-property: transform 3s 3s;
+
         }      
 
 
