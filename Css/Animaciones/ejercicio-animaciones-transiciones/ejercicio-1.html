@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Transition</title>
+        <style>
+            div{
+                margin-bottom: 10px;
+            }
+            /*Ejercicio - 1*/
+            #ejercicio1 {
+                width: 200px;
+                height: 200px;
+                background: #f92672;
+                position: relative;
+            }
+            .fade-in:hover {
+                position: absolute;
+                right: 0;
+                height: 200px;
+                width: 50px;
+                background: #428bca;
+                /*Transición*/
+                transition: opacity , 0.8s, ease-in-out;
+            }
+           
+
+            /*Ejercicio - 2*/
+
+            div#ejercicio2 {
+                padding: 50px;
+                border: 1px solid black;
+                /*Transición*/
+                transition-property: border-radius;
+                transition-delay: 0.8s;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+            }
+            
+            div#ejercicio2 img{
+                width: 100px;
+                height: 100px;
+                /*Transición*/
+                transition-property: opacity , width, height;
+                transition-delay: 0.8s;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+            }
+            div#ejercicio2 img:hover{
+                width: 200px;
+                height: 200px;
+                opacity: 0.3;
+            }
+            div#ejercicio2 :hover{
+                border-radius: 13px;
+            }
+
+
+            /*Ejercicio - 3*/
+
+            #ejercicio3 {
+                width: 100px;
+                height: 100px;
+                background: #f92672;
+           /*Transición*/
+                margin: 50px auto 0;
+            }
+            #ejercicio3:hover{
+                width: 100%;
+                height: 200px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicios Transition</h1>
+        <div id="ejercicio1">
+		    <div class="fade-in"></div>
+		</div>
+
+		<div id="ejercicio2">
+			<img src="arale.jpg" alt="Arale">
+		</div>
+        <div id="ejercicio3"></div>
+        
+    </body>
+</html>
