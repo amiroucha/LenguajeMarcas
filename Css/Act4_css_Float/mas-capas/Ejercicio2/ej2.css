@@ -2,10 +2,25 @@ header{
     position: sticky;
     top: 0px;
     background-color: #fff;
-    color: rgb(189, 33, 169);
     text-align: center;
+    box-shadow: 1px 1px 10px 1px #888888; 
 }
-a{
-    background-color: rgb(234, 234, 234);
+nav, h1{    
     color: rgb(189, 33, 169);
+}
+
+footer{
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+    background-color: #888888;
+}
+footer>a{
+    color: black;
+}
+
+img{
+    z-index: -1;
+    opacity: 0.2;
+    position: fixed;
 }

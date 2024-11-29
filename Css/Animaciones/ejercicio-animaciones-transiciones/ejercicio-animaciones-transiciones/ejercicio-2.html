@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Reloj</title>
+    <style>
+        .start {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 5em;
+        }
+
+        #clock {
+            position: relative;
+            width: 378px;
+            height: 378px;
+            background-image: url('clockFace.png');
+            left: 50%;
+            margin: 5em 0 0 -189px;
+            
+
+        }
+        
+        #hour img{
+            
+          /*Transición*/
+        }
+        #minute img{
+            /*Transición*/
+        }
+        #second img{
+       /*Transición*/
+        }   
+
+
+
+        #clock div {
+            position: absolute;
+        }
+
+        /* ANIMACIONES Y TRANSFORMACIONES */
+
+       
+
+    </style>
+<body>
+    <div class="wrapper">
+        <div id="experiment">
+            <div id="clock">
+                <div id="hour">
+                    <img src="hourHand.png"></div>
+                <div id="minute">
+                    <img src="minuteHand.png"></div>
+                <div id="second">
+                    <img src="secondHand.png"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/*Ejercicico 1-1----------------------------------------------------*/
+article[class="a11"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article[class="a11"] > p, 
+article[class="a12"] > p,
+article[class="a13"] > p{ 
+    border: 2px solid #000;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+}
+/*Ejercicico 1-2----------------------------------------------------*/
+article[class="a12"]{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;/*Ejerciicco 1-2 -----*/
+
+}
+/*Ejercicico 1-3----------------------------------------------------*/
+article[class="a13"]{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+/*Ejercicico 2-1----------------------------------------------------*/
+article.a21{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.a21 >.p2{
+    background-color: rgb(195, 204, 212);
+
+}
+article.a21 > div{
+    border: 2px solid #000;
+    width: 200px;
+    margin: 10px;
+}
+
+
+/*Ejercicico 2-2----------------------------------------------------*/
+
+article.a22{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+article.a22 > div{
+    width: 200px;
+    margin: 10px;
+}
+
+.p2{
+    background-color: rgb(195, 204, 212);
+    border-bottom: 2px #000;/*me falta poner el borde debajo dee los nombres de la frutas*/
+}
+article.a22 p.p2 {
+    border-bottom: black 2px solid;
+}
+
+/*Ejercicico 2-3----------------------------------------------------*/
+
+article.a23{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+article.a23 > div.ficha{
+    border: 1px solid #000;
+    display: flex;
+    margin: 10px;
+    width: 300px;
+}
+
+article.a23 p.p1{
+    text-align: left;
+    padding: 5px;
+}
+article.a23 p.p3{
+    text-align: justify;
+    padding: 5px;
+}
+
+/*Ejercicico 2-4----------------------------------------------------*/
+
+article.a24{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+article.a24 > div.ficha{
+    border: 1px solid #000;
+    display: flex;
+    margin: 10px;
+    width: 300px;
+}
+article.a24 p.p1{
+    text-align: left;
+    padding: 5px;
+    border-right: black 2px solid;
+}
+article.a24 p.p3{
+    text-align: justify;
+    padding: 5px;
+    background-color: rgb(196, 196, 196);
+}
+
+/*Ejercicico 2-5----------------------------------------------------*/
+
+article.a25{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+article.a25 > div.ficha{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;          
+    margin: 10px;
+    width: 300px;
+    background-color: rgb(212, 211, 211);
+}
+article.a25 p.p1{
+    text-align: left;
+    padding: 5px;
+    border-right: black 2px solid;
+    background-color: rgb(255, 255, 255);
+}
+article.a25 p.p2{
+    padding: 5px;
+    flex-grow: 1;  /* Ocupa el espacio restante */
+    display: flex;                 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+/*Ejercicico 3-1----------------------------------------------------*/
+article.a31{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.a31 > div.ficha{
+    border: 1px solid #000;
+    display: block;
+    align-items: center;          
+    margin: 10px;
+    width: 200px;
+}
+article.a31 p.p1{
+    text-align: center;
+    padding: 5px;
+}
+
+/*Ejercicico 3-2----------------------------------------------------*/
+article.a32{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.a32 > div.ficha{
+    border: 1px solid #000;
+    display: flex;
+    margin: 10px;
+    width: 300px;
+}
+article.a32 p.p1{
+    text-align: center;
+    padding: 5px;
+    border-right: black 2px solid;
+}
+article.a32 p.p2{
+    text-align: center;
+    padding: 5px;
+    border-bottom: black 2px solid;
+}
+/*Ejercicico 3-3----------------------------------------------------*/
+article.a33 > div.ficha{
+    border: 1px solid #000;
+    display: block;
+    margin: 10px;
+    width: 300px;         
+}
+article.a33  div.parte{
+    background-color: rgb(212, 211, 211);
+    display: flex;
+    align-items:  center; 
+} 
+div.parte > p.p1{
+    border-right: black 2px solid ;
+    border-bottom: black 2px solid ;
+    border-bottom-right-radius: 10px;
+}
+
